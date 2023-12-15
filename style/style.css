@@ -1,0 +1,55 @@
+body {
+  font-family: "Product Sans";
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: #e2edff;
+}
+
+.jumbotron img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container .carousel-inner {
+  border-radius: 20px;
+}
+
+.container .carousel-inner img {
+  border-radius: 12px;
+}
+
+.about .row .txt-box {
+  background-color: #e2edff;
+  border-radius: 24px;
+}
+
+#project {
+  background-color: #e2edff;
+}
+
+#project .container .card {
+  border-radius: 12px;
+  margin-bottom: 0.2rem;
+}
+
+#project .container .card img {
+  border-radius: 12px;
+}
+
+footer i {
+  color: pink;
+}
+
+footer a {
+  color: white;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: pink;
+}
