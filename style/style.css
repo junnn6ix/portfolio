@@ -2,8 +2,77 @@ body {
   font-family: "Product Sans";
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7%;
+  background-color: rgba(58, 56, 69, 0); /*
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(130, 111, 102, .7);*/
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.navbar.fixed {
+  display: fixed;
+  background-color: rgba(37, 150, 190, 0.05);
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(130, 111, 102, 0.7);
+  opacity: 0.65;
+}
+
+.navbar a {
+  mix-blend-mode: difference;
+}
+
+nav .container .navbar-brand {
+  color: black;
+  mix-blend-mode: difference;
+}
+
+nav .nav-icons {
+  display: flex;
+}
+
+nav .container i {
+  color: black;
+  transform: scale(1.5);
+  margin-right: 1rem;
+}
+
+nav .container i:hover,
+nav .container i:active {
+  color: #0056e0;
+  transition: 0.3s;
+}
+
+#navbarNav {
+  margin-left: 1rem;
+}
+
+nav #navbarNav ul li a {
+  color: black;
+}
+
+nav #navbarNav ul li a:hover {
+  color: #0056e0;
+  transition: 0.3s;
+}
+
 .jumbotron {
-  padding-top: 2rem;
+  padding-top: 6rem;
   background-color: #e2edff;
 }
 
@@ -21,6 +90,27 @@ body {
 
 .container .carousel-inner img {
   border-radius: 12px;
+}
+
+.carousel-inner .carousel-caption h5 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-align: left;
+  margin-top: -30%;
+  margin-left: -1rem;
+  /* mix-blend-mode: difference; */
+}
+
+.carousel-inner .carousel-caption p {
+  text-align: left;
+  margin-left: -1rem;
+  /* mix-blend-mode: difference; */
+}
+
+.about .row {
+  display: gird;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5rem;
 }
 
 .about .row .txt-box {
