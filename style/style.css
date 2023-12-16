@@ -160,6 +160,18 @@ footer h1 {
   font-weight: 100;
 }
 
+footer h1 span i {
+  margin-left: -1rem;
+  transform: scale(0.7);
+  color: #e2edff;
+}
+
+footer h1 span i:hover {
+  transform: rotate(45deg);
+  color: aqua;
+  transition: 1s;
+}
+
 footer ul li {
   list-style: none;
   text-align: left;
@@ -200,6 +212,7 @@ footer .footer-socmed li a i:hover {
 
 .btn-follow:hover {
   color: white;
-  background-color: rgb(253, 67, 67);
+  background-color: rgb(151, 196, 255);
+  color: rgb(0, 110, 255);
   transition: 0.3s;
 }
